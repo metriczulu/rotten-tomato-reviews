@@ -2,7 +2,7 @@
 
 The Rotten Tomatoes review dataset was originally posted on Reddit by */u/nicolas-gervais*, who had scraped it from the RT website.  The scraped used can be found on his github at:
 
-	*https://github.com/nicolas-gervais/6-607-Algorithms-for-Big-Data-Analysis/blob/master/scraping%20all%20critic%20reviews%20from%20rotten%20tomatoes*
+*https://github.com/nicolas-gervais/6-607-Algorithms-for-Big-Data-Analysis/blob/master/scraping%20all%20critic%20reviews%20from%20rotten%20tomatoes*
 
 This is a large-ish dataset with 440k reviews.  Each review is labeled either 1 for ‘Fresh’ or 0 for ‘Not Fresh.’  The dataset is completely balanced with respect to the labels, there is no missing data, and it consists of a single independent variable.  Due to all these factors, EDA is not done in these scripts and I skip straight to the model building process.
 
@@ -12,7 +12,7 @@ The bag-of-words notebook was run on my local PC and the two CNN/RNN scripts wer
 
 All models built use my wordvecpy package for text processing and for generating the embedding matrix for the pretrained GLoVe vectors.
 
-Surprisingly, of all the models trained I found simple logistic regression on a count matrix to be the most accurate and—by far—faster to train that more advanced methods using ensemble decision trees or neural networks.  Multinomial Naïve-Bayes trained faster and came close in accuracy.
+Surprisingly, of all the models trained I found simple logistic regression on a count matrix to be the most accurate and—by far—faster to train than more advanced methods using ensemble decision trees or neural networks.  Multinomial Naïve-Bayes trained faster that logistic regression and came close in accuracy.
 
 ## Future Plans
 
